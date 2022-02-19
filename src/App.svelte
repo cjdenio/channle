@@ -33,10 +33,6 @@
 
   let scrollBox: Element;
 
-  onMount(() => {
-    console.log(`Correct channel is #${correct}`);
-  });
-
   $: isFull =
     text.length ===
     correct.split("").filter((i) => i.toUpperCase() !== i.toLowerCase()).length;
