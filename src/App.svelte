@@ -99,7 +99,7 @@
     <h3 class="text-sm text-center text-gray-700">It's not a typo</h3>
   </div>
 
-  <div class="overflow-scroll max-h-[600px]" bind:this={scrollBox}>
+  <div class="overflow-auto max-h-[600px]" bind:this={scrollBox}>
     {#each historical as thing, index}
       <Letters text={thing} />
     {/each}
