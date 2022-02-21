@@ -51,8 +51,6 @@
   }
 
   async function handleKeyDown(e: KeyboardEvent) {
-    if (solved) return;
-
     if (!e.metaKey && !e.ctrlKey) {
       if (e.code === "Backspace") {
         handleKeyPress("backspace");
@@ -65,6 +63,8 @@
   }
 
   async function handleKeyPress(key: "enter" | "backspace" | string) {
+    if (solved) return;
+
     if (key === "backspace") {
       text = text.slice(0, -1);
     } else if (key === "enter") {
