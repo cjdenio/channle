@@ -15,12 +15,12 @@
 
 <div class="max-w-xl w-full flex gap-2 flex-col items-stretch mb-10">
   <div class="flex gap-2">
-    <div
+    <button
       class="{disabledLetters.includes("q") ? "bg-gray-800" : foundLetters.includes("q") ? "bg-green-700" : "bg-gray-500"} py-3 basis-0 grow text-center rounded-md cursor-pointer select-none"
       on:click={() => dispatchKeyPress("q")}
     >
       Q
-    </div>
+    </button>
     <button
       class="{disabledLetters.includes("w") ? "bg-gray-800" : foundLetters.includes("w") ? "bg-green-700" : "bg-gray-500"} py-3 basis-0 grow text-center rounded-md cursor-pointer select-none"
       on:click={() => dispatchKeyPress("w")}
