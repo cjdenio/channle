@@ -6,4 +6,8 @@
   body {
     @apply bg-neutral-900 text-gray-200;
   }
+
+  button {
+    touch-action: manipulation;
+  }
 }

@@ -133,6 +133,9 @@
       </div>
     {/if}
 
-    <Keyboard on:keypress={(e) => handleKeyPress(e.detail.key)} />
+    <Keyboard
+      on:keypress={(e) => handleKeyPress(e.detail.key)}
+      disabledLetters={historical.flat().filter(l => l.status == "nah").map(l => l.letter.toLowerCase())}
+      foundLetters={historical.flat().filter(l => l.status == "yeah").map(l => l.letter.toLowerCase())} />
   </div>
 </main>
